@@ -79,6 +79,6 @@ augroup vimwiki
   " auto commit changes on each file change
   au! BufWritePost * call <sid>git_action("git add .;git commit -m \"Auto commit + push. `date`\"")
   " push changes only on at the end
-  au! VimLeave * call <sid>git_action("git push origin master")
+  au! VimLeave * call <sid>git_action("git push")
   " au! VimLeave * call <sid>push_changes()
 augroup END
